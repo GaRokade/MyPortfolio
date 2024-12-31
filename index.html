@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Gayatri's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>G</span>ayatri</h1>
+                <ul class="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#services">Services </a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="rowg">
+                <div class="header-text">
+                    
+                    <h1>Hi I'm <span class="name">Gayatri</span><br> Passionate <span id="element"></span></h1>
+                    
+                        
+                </div>
+                 
+                <div class="bgimg">
+                    <img src="images/bg.png" alt="bg">
+                </div>
+            </div>
+            
+           
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/gayub.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and dedicated computer engineering student with a strong interest in web development and design. With a focus on creating intuitive, user-friendly websites and applications, I thrive in problem-solving and continuous learning. I am constantly exploring new technologies and enhancing my skills to stay ahead in the ever-evolving tech landscape..</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Full Stack Development</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>Personal Projects</span><br>
+                                Designed and developed a portfolio website using HTML, CSS, and JavaScript to showcase front-end skills.</li>
+                    
+                            <li><span>Freelance Web Development</span><br>
+                                Created responsive websites for small businesses, including landing pages and informational sites.</li>
+                    
+                            <li><span>Hackathon Participation</span><br>
+                                Collaborated on a web app project at [Name of Hackathon] to solve [brief problem].</li>
+                    
+                            <li><span>Online Course in Web Development</span><br>
+                                Completed courses on React.js and web development, building projects like a weather app and to-do list app.</li>
+                    
+                            <li><span>Volunteer Work</span><br>
+                                Assisted in website design and updates at [Organization Name], gaining WordPress and content management experience.</li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022-Present</span><br>Bachelor of Engineering in Computer Engineering</li>
+                            <li><span>2021-2022</span><br>Higher Secondary School (HSC)</li>
+                            <li><span>2019-2020</span><br>Secondary School (SSC)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Engineering in Computer Engineering</h3>
+                        <p class="institute">Pimpri Chinchwad College of Engineering and Research</p>
+                        <p class="details">2022 - Present | CGPA: 8.5/10</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary School (HSC)</h3>
+                        <p class="institute">Smt. Radhabai Sarda College</p>
+                        <p class="details">2020 - 2022 | Percentage: 87%</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Secondary School (SSC)</h3>
+                        <p class="institute">Smt. Shevantabai Kalmegh Highschool Chousala</p>
+                        <p class="details">2019 - 2020 | Percentage: 90%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- --------------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Crafting responsive and visually appealing user interfaces using HTML, CSS, JavaScript, and React.js to ensure seamless user experiences.</p>
+                    <a href="frontend-details.html">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend Development</h2>
+                    <p>Developing robust server-side functionalities using Django and integrating databases like MySQL and MongoDB for efficient data management.</p>
+                    <a href="backend.html">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>Building complete web applications by combining frontend and backend technologies for a seamless and functional digital experience.</p>
+                    <a href="fullstack.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">
+                My Work
+            </h1>
+            <div class="work-list">
+                <!-- Projects already visible -->
+                <div class="work">
+                    <img src="images/news.jpg" alt="" style="height: 275px;">
+                    <div class="layer">
+                        <h3>News App</h3>
+                        <p>Built a responsive news app using React.js, improving mobile load time by 20% and increasing user engagement by 15%</p>
+                        <a href="https://yournewsdaily.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Amazon.png" alt="" style="height: 275px;">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p> Built the Responsive Clone of Apps like Amazon.</p>
+                        <a href="https://amazon-clone-nu-lemon.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/recipe.jpg" alt="" style="height: 275px;">
+                    <div class="layer">
+                        <h3>Full-Stack Recipe Application</h3>
+                        <p>Built a recipe app with Django and React.js, reducing search times by 25%.</p>
+                        <a href="https://forkify-tsw.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Hidden Projects (Initially Hidden) -->
+            <div class="work-list-disable" style="display: none;">
+                <!-- Additional Projects to be displayed -->
+                <div class="work">
+                    <img src="images/birds.jpg" alt="" style="height: 275px;">
+                    <div class="layer">
+                        <h3>Indian Avian Conservation Fund</h3>
+                        <p>• Engineered a scalable platform for fundraising using Django, increasing donations by 30% and supporting over 1,000 daily transactions.</p>
+                        <a href="https://endangered-species-project.org/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/stonepaper.png" alt="" style="height: 275px;">
+                    <div class="layer">
+                        <h3>Stone Paper Scissor Game</h3>
+                        <p>• Created Stone Paper Scissor Game Using Html,Css,JavaScript.</p>
+                        <a href="https://rock-paper-scissor-six-steel.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ChatApp.png" alt="" style="height: 275px;">
+                    <div class="layer">
+                        <h3>RealTime ChatApp</h3>
+                        <p>Built Realtime ChatApp using socket.io in React.js.</p>
+                        <a href="https://chat-app-react-sand.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+    
+                <!-- More Projects (Optional, if you want more in the next batch) -->
+                
+                <div class="work">
+                    <img src="images/currency.png" alt="" style="height: 275px;">
+                    <div class="layer">
+                        <h3>Currency Converter</h3>
+                        <p>Built the project which can Convert Currency of any country .</p>
+                        <a href="https://currencies-convert.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- See More Button -->
+            <a href="javascript:void(0);" class="btn" id="see-more-btn">See more</a>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:rokadegayatri@gmail.com?subject=Hello&body=Hi%20Gayatri,%20I%20hope%20this%20email%20finds%20you%20well! " class="no-underline">rokdegaytri@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href="https://wa.me/9322955435" class="no-underline" >9322955435</a>
+                        
+                    </p>
+                    <div class="social-icons">
+                        <a href="mailto:rokadegayatri@gmail.com?subject=Hello&body=Hi%20Gayatri,%20I%20hope%20this%20email%20finds%20you%20well!" class="fa-regular fa-envelope"></a>
+
+                        <a href="https://github.com/GaRokade"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gayatripr12/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/9322955435" class="fa-brands fa-whatsapp"></a>
+
+                    </div>
+                    <a href="./images/GayatriUpdatedResume.pdf" download="Resume"  class="btn btn2">View Resume</a>
+
+                </div>
+                <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> © 2024 by Gayatri | <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName('tab-links');
+        var tabcontents=document.getElementsByClassName('tab-contents');
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link')
+        document.getElementById(tabname).classList.add('active-tab');
+       }
+       
+        function closemenu(){
+            document.querySelector('.sidemenu').style.right = "-200px";
+        }
+        
+        function openmenu(){
+            document.querySelector('.sidemenu').style.right = "0";
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const seeMoreButton = document.querySelector(".btn");
+            const workListDisable = document.querySelector(".work-list-disable");
+        
+            // Initially hide the work-list-disable section
+            workListDisable.style.display = "none";
+        
+            // Add click event listener to the See more button
+            seeMoreButton.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default anchor behavior
+        
+                // Toggle the "show" class
+                workListDisable.classList.toggle("show");
+        
+                // Update the display property based on the presence of the "show" class
+                if (workListDisable.classList.contains("show")) {
+                    workListDisable.style.display = "grid"; // Show the section
+                    seeMoreButton.textContent = "See less"; // Change button text
+                } else {
+                    workListDisable.style.display = "none"; // Hide the section
+                    seeMoreButton.textContent = "See more"; // Reset button text
+                }
+            });
+        });
+        
+        
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Developer ', 'Frontend Developer', 'Backend Developer', 'UI/UX Designer'],
+            typeSpeed: 50,
+            backSpeed: 30, // Speed at which text is erased
+            backDelay: 1000, // Delay before starting to erase the text
+            loop: true, // Make it repeat
+        });
+    </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz7ntw_kNHjgQ6Y5GtQHyw-dWCAZa8UJyQGyT9vi6YiFJLV9NyJttEWKPwb9_lww0cM/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById('msg');
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = 'Message sent successfully'
+                setTimeout(function(){
+                    msg.innerHTML = '';
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
